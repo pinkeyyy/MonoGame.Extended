@@ -25,7 +25,9 @@ namespace MonoGame.Extended.Input
         public Point DeltaPosition => new Point(DeltaX, DeltaY);
 
         public int ScrollWheelValue => _currentMouseState.ScrollWheelValue;
+        public int HorizontalScrollWheelValue => _currentMouseState.HorizontalScrollWheelValue;
         public int DeltaScrollWheelValue => _previousMouseState.ScrollWheelValue - _currentMouseState.ScrollWheelValue;
+        public int DeltaHorizontalScrollWheelValue => _previousMouseState.HorizontalScrollWheelValue - _currentMouseState.HorizontalScrollWheelValue;
 
         public ButtonState LeftButton => _currentMouseState.LeftButton;
         public ButtonState MiddleButton => _currentMouseState.MiddleButton;
